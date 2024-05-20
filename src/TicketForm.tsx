@@ -30,7 +30,9 @@ const formSchema = z.object({
   description: z.string().min(2, {
     message: "Description must be at least 2 characters.",
   }),
-  type: z.string({ message: "Please choose a ticket type" }),
+  type: z.string().min(2, {
+    message: "Please choose a ticket type",
+  }),
 });
 
 export default function TicketForm() {
