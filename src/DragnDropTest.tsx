@@ -1,8 +1,8 @@
 import { useState } from "react";
-import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
+import { DragDropContext, Droppable, Draggable } from "@hello-pangea/dnd";
 import "./App.css";
 
-function App() {
+function DragnDropTest() {
   const finalSpaceCharacters = [
     {
       id: "gary",
@@ -45,7 +45,7 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <div className="DragnDropTest">
       <header className="App-header">
         <h1>Final Space Characters</h1>
         <DragDropContext onDragEnd={handleOnDragEnd}>
@@ -90,4 +90,4 @@ function App() {
   );
 }
 
-export default App;
+export default DragnDropTest;
