@@ -1,10 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import DragnDropTest from "./DragnDropTest";
+import Layout from "./Layout";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <DragnDropTest />
+    <Layout />
   </React.StrictMode>
 );
